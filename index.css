@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    max-width: 100%; /* Ensure body adapts to full width */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Vertically center content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#back {
+    width: 90%; /* Responsive width */
+    max-width: 550px; /* Prevent the container from getting too wide */
+    height: auto;
+    background-color: #F4F4F4;
+    margin: 20px auto; /* Center and add spacing on smaller screens */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#top {
+    height: auto;
+    background-color: #6943FF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 55%; /* Flexible input width */
+    max-width: 400px; /* Limit width for large screens */
+    height: 60px; /* Adjusted height */
+    border: solid #B295FF 2px;
+    border-radius: 5px;
+    background-color: #6943FF;
+    font-size: 1.5rem; /* Responsive font size */
+    font-weight: 800;
+    text-align: center;
+    color: #F4F4F4;
+    margin: 20px 0; /* Balanced margin for top and bottom */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the buttons */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#convert-btn, #refresh-btn {
+    width: auto; /* Adjust width so buttons size correctly */
+    padding: 10px 20px; /* Add padding for consistent size */
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+
+#refresh-btn {
+    width: auto;
+    background-color: #6943FF; /* Different color for the refresh button */
+    color: #F4F4F4;
+    border: solid 2px #F4F4F4;
+    
+}
+#refresh-btn i {
+    font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+#refresh-btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#convert-btn:hover, #refresh-btn:hover {
+    background-color: #b4aff7;
+}
+
+button:hover {
+    background-color: #b4aff7;
+}
+
+#title {
+    width: 100%; /* Responsive title width */
+    font-weight: 800;
+    font-size: 1.75rem; /* Responsive font size */
+    line-height: 2rem;
+    color: #F4F4F4;
+    margin-bottom: 20px;
+}
+
+.result {
+    width: 90%; /* Flexible width */
+    max-width: 500px;
+    height: auto;
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #5A537B;
+}
+
+.result p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #353535;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1.25rem;
+    }
+
+    button {
+        width: 80%;
+    }
+}
